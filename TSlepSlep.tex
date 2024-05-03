@@ -5,7 +5,7 @@
 
 \input{shared/header.tex}
 
-\def\MainQuark{q}
+\def\MainLepton{\ensuremath{\ell}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Document %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,19 +31,19 @@
   \fmf{fermion,  tension=2., lab=p, label.side=left}{v1,i2}
            
   %%%%%%%%%%%% Produced SUSY particles
-  \fmf{dashes, label=\sQ, label.side=left}{v1,v3}
-  \fmf{dashes, label=\sQb, label.side=right}{v1,v2}
+  \fmf{dashes, label=\sLep, label.side=left}{v1,v3}
+  \fmf{dashes, label=\sLep, label.side=right}{v1,v2}
 
   %%%%%%%%%%%%% Decays and vertex circles
   \fmf{fermion}{v3,o4} 
-  \fmflabel{\MainQuark}{o4}
+  \fmflabel{\MainLepton}{o4}
 
   \fmf{dots}{v3,o3}
   \fmflabel{\chiz}{o3}
 
   %% 2nd decay
   \fmf{fermion}{v2,o1}
-  \fmflabel{$\mathrm{\overline{\MainQuark}}$}{o1}
+  \fmflabel{$\mathrm{\overline{\MainLepton}}$}{o1}
  
   \fmf{dots}{v2,o2}
   \fmflabel{\chiz}{o2}
